@@ -119,6 +119,79 @@ load_dotenv()
 
 <hr>
 
+<div class="section">
+        <h2>📦 Download & Load Hugging Face Models Locally</h2>
+ </div>
+        <p>
+            This project includes an example showing how to download a Hugging Face
+            model once, store it locally, and reload it without repeatedly accessing
+            the Hugging Face Hub.
+        </p>
+ </div>
+        <h3>✅ Why Local Model Loading?</h3>
+        <ul>
+            <li>Faster inference after initial download</li>
+            <li>Offline or restricted-network execution</li>
+            <li>Better integration with LangChain pipelines</li>
+            <li>Reduced dependency on external endpoints</li>
+        </ul>
+    </div>
+ </div>
+    <div class="section">
+        <h2>📁 Project Structure</h2>
+ </div>
+        <pre>
+Building-LLM-Pipelines-with-Hugging-Face-LangChain/
+│
+├── models/
+│   └── deepseek/
+│       └── download_and_load_hf_model.py
+│
+├── README.md
+├── README.html
+├── requirements.txt
+└── .env
+        </pre>
+    </div>
+ </div>
+    <div class="section">
+        <h2>🔐 Environment Configuration</h2>
+ </div>
+        <p>
+            Store your Hugging Face access token securely using a <code>.env</code> file.
+        </p>
+ </div>
+        <pre>
+hf=your_huggingface_token_here
+        </pre>
+ </div>
+        <p>
+            The token is loaded at runtime using <code>python-dotenv</code>, avoiding
+            hard-coded secrets in source files.
+        </p>
+    </div>
+ </div>
+    <div class="section">
+        <h2>📄 Example Script</h2>
+ </div>
+        <p>
+            The following script demonstrates how to:
+        </p>
+ </div>
+        <ul>
+            <li>Load Hugging Face credentials</li>
+            <li>Download the DeepSeek Coder 1.3B Instruct model</li>
+            <li>Save the model and tokenizer locally</li>
+            <li>Reload the model from disk</li>
+        </ul>
+ </div>
+        <p>
+            File location:
+            <code>models/deepseek/download_and_load_hf_model.py</code>
+        </p>
+    </div>
+
+
 <h2>Recommended Dependencies</h2>
 <pre>
 langchain

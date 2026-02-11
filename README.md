@@ -198,7 +198,6 @@ langchain
 transformers
 huggingface_hub
 python-dotenv
-torch
 </pre>
 
 <hr>
